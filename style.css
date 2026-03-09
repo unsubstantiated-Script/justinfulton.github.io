@@ -1,0 +1,16 @@
+body {
+font-family: Arial, sans-serif;
+margin: 40px;
+max-width: 900px;
+line-height: 1.6;
+}
+
+header {
+margin-bottom: 40px;
+}
+
+.project {
+border: 1px solid #ddd;
+padding: 15px;
+margin-bottom: 15px;
+}

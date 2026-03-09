@@ -339,7 +339,17 @@ a:focus-visible,
 
 .stack-list {
   list-style: none;
-  margin: 0;
+  margin: 0;.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 920px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
   padding: 0;
   display: flex;
   flex-wrap: wrap;
@@ -472,5 +482,17 @@ a:focus-visible,
 
   .hero-subtitle {
     font-size: 1rem;
+  }
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 920px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 }

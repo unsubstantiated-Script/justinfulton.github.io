@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page-bg"></div>
+  <div class="page-bg" aria-hidden="true"></div>
 
   <div class="container">
     <header class="hero">
@@ -69,100 +69,114 @@
       </section>
 
       <section class="panel panel-projects">
-<div class="section-head">
-<span class="section-label">Projects</span>
-<h2>Selected portfolio work</h2>
-<p>
-Practical backend and cloud-focused projects built around Go, APIs,
-and AWS-oriented integrations.
-</p>
-</div>
+        <div class="section-head">
+          <span class="section-label">Projects</span>
+          <h2>Selected portfolio work</h2>
+          <p>
+            Practical backend and cloud-focused projects built around Go, APIs,
+            and AWS-oriented integrations.
+          </p>
+        </div>
 
-<div class="projects-grid">
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Concurrent Task Scheduler</h3>
+              <span class="pill">Go</span>
+            </div>
 
-<article class="project-card">
-<div class="project-top">
-<h3>Concurrent Task Scheduler</h3>
-<span class="pill">Go</span>
-</div>
+            <p>High performance async task system written in Go.</p>
 
-<p>High performance async task system written in Go.</p>
+            <ul class="project-tech">
+              <li>Goroutines</li>
+              <li>Worker Pools</li>
+              <li>Concurrent Processing</li>
+            </ul>
 
-<ul class="project-tech">
-<li>Goroutines</li>
-<li>Worker Pools</li>
-<li>Concurrent Processing</li>
-</ul>
+            <a
+              href="https://github.com/unsubstantiated-Script/goConcurrencyTaskScheduler"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code →
+            </a>
+          </article>
 
-<a href="https://github.com/unsubstantiated-Script/goConcurrencyTaskScheduler">
-View Code →
-</a>
-</article>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Go Bank</h3>
+              <span class="pill">Go + AWS</span>
+            </div>
 
+            <p>
+              Transaction Banking REST and gRPC API with PASETO authentication.
+              Integration with AWS EKS.
+            </p>
 
-<article class="project-card">
-<div class="project-top">
-<h3>Go Bank</h3>
-<span class="pill">Go + AWS</span>
-</div>
+            <ul class="project-tech">
+              <li>gRPC</li>
+              <li>PASETO Auth</li>
+              <li>AWS EKS</li>
+              <li>PostgreSQL</li>
+            </ul>
 
-<p>
-Transaction Banking REST and gRPC API with PASETO authentication.
-Integration with AWS EKS
-</p>
+            <a
+              href="https://github.com/unsubstantiated-Script/goBank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code →
+            </a>
+          </article>
 
-<ul class="project-tech">
-<li>gRPC</li>
-<li>PASETO Auth</li>
-<li>AWS EKS</li>
-<li>PostgreSQL</li>
-</ul>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>Go API</h3>
+              <span class="pill">REST API</span>
+            </div>
 
-<a href="https://github.com/unsubstantiated-Script/goBank">
-View Code →
-</a>
-</article>
+            <p>REST API.</p>
 
+            <ul class="project-tech">
+              <li>CRUD API</li>
+              <li>Go HTTP</li>
+              <li>JSON</li>
+            </ul>
 
-<article class="project-card">
-<div class="project-top">
-<h3>Go API</h3>
-<span class="pill">REST API</span>
-</div>
+            <a
+              href="https://github.com/unsubstantiated-Script/goCRUDAPI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code →
+            </a>
+          </article>
 
-<p>REST API</p>
+          <article class="project-card">
+            <div class="project-top">
+              <h3>DNS Record Checker</h3>
+              <span class="pill">Go</span>
+            </div>
 
-<ul class="project-tech">
-<li>CRUD API</li>
-<li>Go HTTP</li>
-<li>JSON</li>
-</ul>
+            <p>Go tool for checking DNS records such as MX, SPF, and DMARC.</p>
 
-<a href="https://github.com/unsubstantiated-Script/goCRUDAPI">
-View Code →
-</a>
-</article>
+            <ul class="project-tech">
+              <li>DNS Lookups</li>
+              <li>MX</li>
+              <li>SPF</li>
+              <li>DMARC</li>
+            </ul>
 
-
-<article class="project-card">
-<div class="project-top">
-<h3>AWS Lambda Integration</h3>
-<span class="pill">AWS</span>
-</div>
-
-<p>Go tool for checking DNS Records</p>
-
-<ul class="project-tech">
-<li>Go </li>
-</ul>
-
-<a href="https://github.com/unsubstantiated-Script/goDNSRecordChecker">
-View Code →
-</a>
-</article>
-
-</div>
-</section>
+            <a
+              href="https://github.com/unsubstantiated-Script/goDNSRecordChecker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Code →
+            </a>
+          </article>
+        </div>
+      </section>
 
       <section class="panel panel-stack">
         <div class="section-head">
@@ -203,30 +217,39 @@ View Code →
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-left">
+          <h3>Justin Fulton</h3>
+          <p>Backend Engineer — Go | APIs | Cloud Systems</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="mailto:jusfulton@gmail.com">Email</a>
+          <a
+            href="https://github.com/unsubstantiated-Script"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          <a
+            href="assets/JustinFultonResumeBB.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Resume
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 Justin Fulton • Built with Go-focused projects • Open to backend opportunities
+        </p>
+      </div>
+    </footer>
   </div>
-  <footer class="site-footer">
-
-<div class="footer-inner">
-
-<div class="footer-left">
-<h3>Justin Fulton</h3>
-<p>Backend Engineer — Go | APIs | Cloud Systems</p>
-</div>
-
-<div class="footer-links">
-<a href="mailto:jusfulton@gmail.com">Email</a>
-<a href="https://github.com/unsubstantiated-Script">GitHub</a>
-<a href="assets/JustinFultonResumeBB.pdf">Resume</a>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>
-© 2026 Justin Fulton • Built with Go-focused projects • Open to backend opportunities
-</p>
-</div>
-
-</footer>
 </body>
 </html>

@@ -390,3 +390,76 @@ a:hover {
     font-size: 1rem;
   }
 }
+
+.project-tech {
+list-style: none;
+padding: 0;
+margin: 12px 0 16px;
+display: flex;
+flex-wrap: wrap;
+gap: 8px;
+}
+
+.project-tech li {
+background: rgba(255,255,255,0.08);
+border: 1px solid rgba(255,255,255,0.15);
+padding: 5px 10px;
+border-radius: 999px;
+font-size: 0.75rem;
+font-weight: 600;
+color: #dbeafe;
+}
+
+.site-footer {
+margin-top: 40px;
+padding: 30px;
+border-top: 1px solid rgba(255,255,255,0.08);
+color: #cbd5e1;
+}
+
+.footer-inner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 16px;
+}
+
+.footer-left h3 {
+margin: 0;
+color: white;
+}
+
+.footer-links {
+display: flex;
+gap: 18px;
+}
+
+.footer-links a {
+color: #93c5fd;
+font-weight: 600;
+}
+
+.footer-links a:hover {
+color: white;
+}
+
+.footer-bottom {
+margin-top: 20px;
+font-size: 0.85rem;
+color: #94a3b8;
+text-align: center;
+}
+
+@media (max-width: 700px) {
+
+.footer-inner {
+flex-direction: column;
+text-align: center;
+}
+
+.footer-links {
+justify-content: center;
+}
+
+}

@@ -10,111 +10,147 @@
   />
   <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="site-shell">
+  <div class="page-bg"></div>
+
+  <div class="container">
     <header class="hero">
-      <div class="hero-text">
-        <p class="eyebrow">Backend Engineer</p>
+      <div class="hero-copy">
+        <p class="kicker">Backend Engineer</p>
         <h1>Justin Fulton</h1>
-        <p class="subtitle">Go | APIs | Cloud Systems</p>
-        <p class="intro">
+        <p class="hero-subtitle">Go | APIs | Cloud Systems</p>
+
+        <p class="hero-text">
           Backend developer focused on Go microservices, distributed systems,
           and cloud-native infrastructure.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="assets/JustinFultonResumeBB.pdf" target="_blank" rel="noopener noreferrer">
+          <a
+            class="btn btn-primary"
+            href="assets/JustinFultonResumeBB.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Download Resume
           </a>
-        </br>
-          <a class="button button-secondary" href="https://github.com/unsubstantiated-Script" target="_blank" rel="noopener noreferrer">
-            View GitHub
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/unsubstantiated-Script"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub Profile
           </a>
         </div>
       </div>
 
-      <div class="hero-image-wrap">
-        <img
-          class="profile-image"
-          src="assets/profile_pic.jpeg"
-          alt="Profile photo of Justin Fulton"
-        />
+      <div class="hero-media">
+        <div class="image-frame">
+          <img
+            src="assets/profile_pic.jpeg"
+            alt="Profile photo of Justin Fulton"
+            class="profile-pic"
+          />
+        </div>
       </div>
     </header>
 
-    <main>
-      <section class="card">
-        <h2>About</h2>
+    <main class="content-grid">
+      <section class="panel panel-about">
+        <div class="section-head">
+          <span class="section-label">About</span>
+          <h2>Building reliable backend systems with Go</h2>
+        </div>
         <p>
           Backend developer focused on Go microservices, distributed systems,
           and cloud-native infrastructure.
         </p>
       </section>
 
-      <section class="card">
-        <div class="section-heading">
-          <h2>Projects</h2>
-          <p>Selected work and portfolio repositories.</p>
+      <section class="panel panel-projects">
+        <div class="section-head">
+          <span class="section-label">Projects</span>
+          <h2>Selected portfolio work</h2>
+          <p>
+            Practical backend and cloud-focused projects built around Go, APIs,
+            and AWS-oriented integrations.
+          </p>
         </div>
 
         <div class="projects-grid">
-          <article class="project">
+          <article class="project-card">
             <div class="project-top">
               <h3>Concurrent Task Scheduler</h3>
-              <span class="tag">Go</span>
+              <span class="pill">Go</span>
             </div>
             <p>High performance async task system written in Go.</p>
-            <a href="https://github.com/unsubstantiated-Script/goConcurrencyTaskScheduler" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/unsubstantiated-Script/goConcurrencyTaskScheduler"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Code
             </a>
           </article>
 
-          <article class="project">
+          <article class="project-card">
             <div class="project-top">
               <h3>Go Bank</h3>
-              <span class="tag">Go + AWS</span>
+              <span class="pill">Go + AWS</span>
             </div>
             <p>
               Transaction Banking REST and gRPC API with PASETO authentication.
               Integration with AWS EKS
             </p>
-            <a href="https://github.com/unsubstantiated-Script/goBank" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/unsubstantiated-Script/goBank"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Code
             </a>
           </article>
 
-          <article class="project">
+          <article class="project-card">
             <div class="project-top">
               <h3>Go API</h3>
-              <span class="tag">REST API</span>
+              <span class="pill">REST API</span>
             </div>
             <p>REST API</p>
-            <a href="https://github.com/unsubstantiated-Script/goCRUDAPI" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/unsubstantiated-Script/goCRUDAPI"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Code
             </a>
           </article>
 
-          <article class="project">
+          <article class="project-card">
             <div class="project-top">
               <h3>AWS Lambda Integration</h3>
-              <span class="tag">AWS</span>
+              <span class="pill">AWS</span>
             </div>
             <p>Go tool for integrating with AWS Lambdas</p>
-            <a href="https://github.com/unsubstantiated-Script/goAWSLambda" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://github.com/unsubstantiated-Script/goAWSLambda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               View Code
             </a>
           </article>
         </div>
       </section>
 
-      <section class="card">
-        <div class="section-heading">
-          <h2>Tech Stack</h2>
-          <p>Core tools and technologies.</p>
+      <section class="panel panel-stack">
+        <div class="section-head">
+          <span class="section-label">Tech Stack</span>
+          <h2>Core technologies</h2>
         </div>
 
-        <ul class="tech-list">
+        <ul class="stack-list">
           <li>Go / Golang</li>
           <li>REST APIs</li>
           <li>PostgreSQL</li>
@@ -123,20 +159,24 @@
         </ul>
       </section>
 
-      <section class="card">
-        <div class="section-heading">
-          <h2>Contact</h2>
-          <p>Best ways to reach me and view my work.</p>
+      <section class="panel panel-contact">
+        <div class="section-head">
+          <span class="section-label">Contact</span>
+          <h2>Get in touch</h2>
         </div>
 
-        <div class="contact-links">
+        <div class="contact-block">
           <p>
-            <strong>Email:</strong>
+            <span class="contact-label">Email</span>
             <a href="mailto:jusfulton@gmail.com">jusfulton@gmail.com</a>
           </p>
           <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/unsubstantiated-Script" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label">GitHub</span>
+            <a
+              href="https://github.com/unsubstantiated-Script"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               github.com/unsubstantiated-Script
             </a>
           </p>

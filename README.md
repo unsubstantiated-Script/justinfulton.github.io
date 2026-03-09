@@ -1,122 +1,59 @@
-# Justin Fulton – Developer Portfolio
+# Justin Fulton Portfolio
 
-🚀 Backend Engineer | Go | APIs | Distributed Systems
+A personal portfolio site for Justin Fulton showcasing backend engineering work with a focus on Go, APIs, cloud systems, distributed systems, and AWS-related tooling.
 
-This repository contains the source for my personal portfolio site hosted with GitHub Pages.
+## Overview
 
-The site highlights my backend development work, particularly projects built with Go and cloud-native technologies.
+This repository contains the source for a responsive portfolio website designed to present:
 
-## Live Site
-
-https://YOURUSERNAME.github.io
-
-## About Me
-
-Backend-focused software engineer with experience building APIs, distributed systems, and cloud services.
-My primary focus is **Go (Golang)** development with an emphasis on performance, reliability, and scalable architecture.
-
-Areas of interest include:
-
-* Distributed systems
-* API design
-* Cloud infrastructure
-* Microservices
-* Event-driven architectures
+- Professional profile and backend engineering focus
+- Go and AWS portfolio projects
+- Core tech stack
+- Contact information
+- Resume download
+- Profile photo
 
 ## Featured Projects
 
-### Distributed Job Queue
+### Concurrent Task Scheduler
+High performance async task system written in Go.
 
-A concurrent background task processing system written in Go.
+Repository:  
+https://github.com/unsubstantiated-Script/goConcurrencyTaskScheduler
 
-Features:
+### Go Bank
+Transaction Banking REST and gRPC API with PASETO authentication. Integration with AWS EKS
 
-* Worker pools using goroutines
-* Redis-backed job queue
-* Task retries and failure handling
-* High throughput processing
+Repository:  
+https://github.com/unsubstantiated-Script/goBank
 
-Tech:
+### Go API
+REST API
 
-* Go
-* Redis
-* Docker
+Repository:  
+https://github.com/unsubstantiated-Script/goCRUDAPI
 
----
+### AWS Lambda Integration
+Go tool for integrating with AWS Lambdas
 
-### Authentication API
-
-A REST API implementing secure authentication and role-based access control.
-
-Features:
-
-* JWT authentication
-* Role-based permissions
-* Middleware architecture
-* PostgreSQL persistence
-
-Tech:
-
-* Go
-* PostgreSQL
-* Docker
-* REST
-
----
-
-### Event Stream Processor
-
-A scalable event pipeline for processing asynchronous messages.
-
-Features:
-
-* Event-driven architecture
-* Worker-based processing
-* Message queue integration
-* Fault-tolerant design
-
-Tech:
-
-* Go
-* Message queues
-* Concurrent processing
+Repository:  
+https://github.com/unsubstantiated-Script/goAWSLambda
 
 ## Tech Stack
 
-Primary technologies used across projects:
+- Go / Golang
+- REST APIs
+- PostgreSQL
+- Docker
+- AWS
 
-* Go (Golang)
-* REST APIs
-* PostgreSQL
-* Redis
-* Docker
-* AWS (learning / certification in progress)
+## Files
 
-## Repository Structure
-
-```
+```text
 .
 ├── index.html
 ├── style.css
-├── assets
-│   ├── resume.pdf
-│   └── profile.jpg
-└── projects
-```
-
-## Resume
-
-A current resume is available in the repository:
-
-```
-assets/resume.pdf
-```
-
-## Contact
-
-GitHub: https://github.com/YOURUSERNAME
-Email: [your@email.com](mailto:your@email.com)
-
----
-
-This portfolio is hosted using **GitHub Pages** and serves as a central hub for my development projects and work samples.
+├── README.md
+└── assets/
+    ├── JustinFultonResumeBB.pdf
+    └── profile_pic.jpeg
